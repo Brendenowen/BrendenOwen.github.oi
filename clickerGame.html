@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+
+<body>
+  <img id="thing"
+    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvKKYbJ0pQ4RWZx0ucQbKGvRAxHuAgzJ8uO7x405UzDvEqVGiSeLVx5MmbegNEnvttZO0:https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/2023_Dacia_Duster_1X7A6294.jpg/1200px-2023_Dacia_Duster_1X7A6294.jpg&usqp=CAU">
+  <h1 id="among"> E </h1>
+  
+
+<button type="button" id="upgrade">ReSale!</button>
+ 
+</body>
+
+</html>
+
+<p id="demo"></p>
+<script>
+  var score = 0
+  var upgrade = 1
+  var buyMoreCarL = 1500
+  document.getElementById("thing").addEventListener("click", addScore)
+  document.getElementById("upgrade").addEventListener("click", dotheupgrade)
+  function addScore() {
+    score = score + upgrade
+    document.getElementById("among").innerText = "score = " + score
+
+  }
+  
+  function dotheupgrade() {
+  
+  if(score>=15){
+    thing=thing + 1
+    score = score - 15
+
+  }
+  function idle(){
+
+score=score+1
+
+document.getElementById("among").innerText = "button:" + score
+  }
+  setInterval(idle, 10);
+  }
+
+
+
+</script>
